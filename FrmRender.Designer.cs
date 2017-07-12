@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            //Initialize PictureBox, Label, TrackBar, Button, CheckBox...
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,46 +45,54 @@
             this.chRight = new System.Windows.Forms.CheckBox();
             this.chBack = new System.Windows.Forms.CheckBox();
             this.chLeft = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tZ)).BeginInit();
             this.gFilling.SuspendLayout();
             this.SuspendLayout();
-
-            //pictureBox1
+            // 
+            // pictureBox1
+            // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(275, 275);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-
-            //label1
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(293, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "X:";
-
-            //label2
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(293, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(17, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Y:";
-
-            //label3
+            // 
+            // label3
+            // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(293, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Z:";
-
-            //tX
+            // 
+            // tX
+            // 
             this.tX.AutoSize = false;
             this.tX.Location = new System.Drawing.Point(308, 12);
             this.tX.Maximum = 360;
@@ -136,7 +143,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.CornflowerBlue;
             this.linkLabel1.Location = new System.Drawing.Point(524, 277);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(81, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(65, 13);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "AlanNguyen";
@@ -211,6 +218,7 @@
             // 
             this.chRight.AutoSize = true;
             this.chRight.Checked = true;
+            this.chRight.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chRight.Location = new System.Drawing.Point(16, 93);
             this.chRight.Name = "chRight";
             this.chRight.Size = new System.Drawing.Size(51, 17);
@@ -223,6 +231,7 @@
             // 
             this.chBack.AutoSize = true;
             this.chBack.Checked = true;
+            this.chBack.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chBack.Location = new System.Drawing.Point(16, 59);
             this.chBack.Name = "chBack";
             this.chBack.Size = new System.Drawing.Size(51, 17);
@@ -241,12 +250,42 @@
             this.chLeft.Text = "Left";
             this.chLeft.UseVisualStyleBackColor = true;
             this.chLeft.CheckedChanged += new System.EventHandler(this.chLeft_CheckedChanged);
-
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(620, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(620, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(620, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "0";
+            // 
             // FrmRender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 299);
+            this.ClientSize = new System.Drawing.Size(671, 299);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.gFilling);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnReset);
@@ -270,6 +309,7 @@
             this.gFilling.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -292,5 +332,8 @@
         private System.Windows.Forms.CheckBox chRight;
         private System.Windows.Forms.CheckBox chLeft;
         private System.Windows.Forms.CheckBox chWires;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

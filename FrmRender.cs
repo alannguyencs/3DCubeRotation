@@ -49,16 +49,20 @@ namespace _3DCube
 
         private void tX_Scroll(object sender, EventArgs e)
         {
+            label4.Text = tX.Value.ToString();
             this.Refresh();
         }
+        
 
         private void tY_Scroll(object sender, EventArgs e)
         {
+            label5.Text = tY.Value.ToString();
             this.Refresh();
         }
 
         private void tZ_Scroll(object sender, EventArgs e)
         {
+            label6.Text = tZ.Value.ToString();
             this.Refresh();
         }
 
@@ -75,6 +79,10 @@ namespace _3DCube
             chRight.Checked = true;
             chTop.Checked = false;
             chBottom.Checked = true;
+
+            label4.Text = "0";
+            label5.Text = "0";
+            label6.Text = "0";
 
             mainCube = new Math3D.Cube(100, 125, 150); //Start over
             this.Refresh();
