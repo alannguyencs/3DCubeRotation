@@ -146,7 +146,7 @@
             this.linkLabel1.Size = new System.Drawing.Size(65, 13);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "AlanNguyen";
+            this.linkLabel1.Text = "AlanShare";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
