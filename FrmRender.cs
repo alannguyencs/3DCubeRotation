@@ -95,7 +95,7 @@ namespace _3DCube
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/thanhnh2509");
+            System.Diagnostics.Process.Start("https://github.com/alanshare");
         }
 
         private void chWires_CheckedChanged(object sender, EventArgs e)
